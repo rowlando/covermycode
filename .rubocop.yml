@@ -1,0 +1,6 @@
+inherit_from:
+  - '.ruby-style.yml'
+
+AllCops:
+  Exclude:
+    - 'spec/spec_helper.rb'

@@ -3,7 +3,6 @@ $LOAD_PATH.unshift("#{File.dirname(__FILE__)}/lib")
 require 'helpers'
 
 describe Helpers do
-
   include Helpers
 
   context 'with no arguments' do
@@ -14,7 +13,12 @@ describe Helpers do
 
   context 'with dimensions set' do
     it 'returns the total area of all sides' do
-      expect(calculate_area_of_box_sides(width: 5, height: 5, depth: 5)).to eq(150)
+      expect(
+        calculate_area_of_box_sides(width: 5,
+                                    height: 5,
+                                    depth: 5
+                                   )
+      ).to eq(150)
     end
   end
 
@@ -27,5 +31,4 @@ describe Helpers do
       ).to eq(31.26)
     end
   end
-
 end
