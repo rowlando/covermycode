@@ -7,7 +7,8 @@ module Helpers
     sides_width_area = width * height * 2
     sides_depth_area = depth * height * 2
 
-    top_and_bottom_area + sides_depth_area + sides_width_area
+    area = top_and_bottom_area + sides_depth_area + sides_width_area
+    area.round(2)
   end
 
 end
